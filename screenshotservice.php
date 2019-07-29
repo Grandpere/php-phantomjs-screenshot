@@ -37,5 +37,6 @@ else {
     }
     else {
         echo '<img src="'.$file.'" alt="capture d\'écran du post'.$id.'">';
+        // echo '<a href="./'.$file.'">Télécharger la capture d\'écran</a>';
     }
 }
