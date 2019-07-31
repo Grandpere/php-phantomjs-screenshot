@@ -4,27 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5366b98653669be72e5bc5a9fcabf4cb",
+    "content-hash": "1fa3fafc0a291b81500ebf3fb68f0b69",
     "packages": [
         {
             "name": "jakoch/phantomjs-installer",
-            "version": "2.1.1",
+            "version": "2.1.1-p08",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jakoch/phantomjs-installer.git",
-                "reference": "b8ee2aac9b95f9a9ee30a05a4df4a0984a8a8b85"
+                "reference": "7775820cf5eae8962cf68ab44757238e4d3136cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jakoch/phantomjs-installer/zipball/b8ee2aac9b95f9a9ee30a05a4df4a0984a8a8b85",
-                "reference": "b8ee2aac9b95f9a9ee30a05a4df4a0984a8a8b85",
+                "url": "https://api.github.com/repos/jakoch/phantomjs-installer/zipball/7775820cf5eae8962cf68ab44757238e4d3136cc",
+                "reference": "7775820cf5eae8962cf68ab44757238e4d3136cc",
                 "shasum": ""
             },
             "require": {
-                "ext-openssl": "*"
+                "ext-bz2": "*",
+                "ext-openssl": "*",
+                "php": ">5.3"
+            },
+            "require-dev": {
+                "composer/composer": "^1.2",
+                "phpunit/phpunit": "^4.8"
             },
             "type": "custom-installer",
             "autoload": {
+                "psr-4": {
+                    "PhantomInstaller\\Test\\": "tests/"
+                },
                 "psr-0": {
                     "PhantomInstaller\\": "src/"
                 }
@@ -45,25 +54,25 @@
                 "headless",
                 "phantomjs"
             ],
-            "time": "2016-01-25T16:30:30+00:00"
+            "time": "2017-01-10T09:56:38+00:00"
         },
         {
             "name": "jonnyw/php-phantomjs",
-            "version": "v4.5.1",
+            "version": "v4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jonnnnyw/php-phantomjs.git",
-                "reference": "cf8d9a221f4c624aa1537c55a2e181f4b50367d7"
+                "reference": "f35764503f6828908fd1108c960080edf915eabe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonnnnyw/php-phantomjs/zipball/cf8d9a221f4c624aa1537c55a2e181f4b50367d7",
-                "reference": "cf8d9a221f4c624aa1537c55a2e181f4b50367d7",
+                "url": "https://api.github.com/repos/jonnnnyw/php-phantomjs/zipball/f35764503f6828908fd1108c960080edf915eabe",
+                "reference": "f35764503f6828908fd1108c960080edf915eabe",
                 "shasum": ""
             },
             "require": {
-                "jakoch/phantomjs-installer": "2.1.1",
-                "php": ">=5.3.0",
+                "jakoch/phantomjs-installer": "2.1.1-p08",
+                "php": ">=5.4.0",
                 "symfony/config": "~2.3|~3.0",
                 "symfony/dependency-injection": "~2.3|~3.0",
                 "symfony/filesystem": "~2.3|~3.0",
@@ -101,7 +110,7 @@
                 "phantomjs",
                 "testing"
             ],
-            "time": "2016-06-28T16:00:15+00:00"
+            "time": "2018-04-03T17:45:23+00:00"
         },
         {
             "name": "psr/container",
@@ -154,16 +163,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.4.29",
+            "version": "v3.4.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "29a33f66194fbe2ed4555981810f15fd8440e4a8"
+                "reference": "623fd6be3e5d4112d667003488c8c3ec12b66f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/29a33f66194fbe2ed4555981810f15fd8440e4a8",
-                "reference": "29a33f66194fbe2ed4555981810f15fd8440e4a8",
+                "url": "https://api.github.com/repos/symfony/config/zipball/623fd6be3e5d4112d667003488c8c3ec12b66f62",
+                "reference": "623fd6be3e5d4112d667003488c8c3ec12b66f62",
                 "shasum": ""
             },
             "require": {
@@ -214,20 +223,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T15:47:52+00:00"
+            "time": "2019-07-17T15:23:18+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.29",
+            "version": "v3.4.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "76857ce235ba1866b66a1d5be34c6794c8895435"
+                "reference": "ade939fe83d5ec5fcaa98628dc42d83232c8eb41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/76857ce235ba1866b66a1d5be34c6794c8895435",
-                "reference": "76857ce235ba1866b66a1d5be34c6794c8895435",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/ade939fe83d5ec5fcaa98628dc42d83232c8eb41",
+                "reference": "ade939fe83d5ec5fcaa98628dc42d83232c8eb41",
                 "shasum": ""
             },
             "require": {
@@ -285,11 +294,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T15:47:52+00:00"
+            "time": "2019-07-19T11:52:08+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.29",
+            "version": "v3.4.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -397,16 +406,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.29",
+            "version": "v3.4.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "212a27b731e5bfb735679d1ffaac82bd6a1dc996"
+                "reference": "051d045c684148060ebfc9affb7e3f5e0899d40b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/212a27b731e5bfb735679d1ffaac82bd6a1dc996",
-                "reference": "212a27b731e5bfb735679d1ffaac82bd6a1dc996",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/051d045c684148060ebfc9affb7e3f5e0899d40b",
+                "reference": "051d045c684148060ebfc9affb7e3f5e0899d40b",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +461,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-25T07:48:46+00:00"
+            "time": "2019-07-24T13:01:31+00:00"
         },
         {
             "name": "twig/twig",

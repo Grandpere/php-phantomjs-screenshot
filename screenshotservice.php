@@ -18,7 +18,7 @@ else {
         ->createProcedureLoader($location);
 
     $client = Client::getInstance();
-    $client->getProcedureCompiler()->clearCache();
+    // $client->getProcedureCompiler()->clearCache();
     $client->getProcedureLoader()->addLoader($procedureLoader);
     $width  = 1440;
     $height = 900;
