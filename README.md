@@ -5,8 +5,9 @@
 * move to repository folder
 * download apache server ([get Apache](https://httpd.apache.org/download.cgi))
 * ```composer install``` ([get Composer](https://getcomposer.org/))
-* ```chmod 755 procedure_capture.partial``` in custom_scripts folder for app reads this file
 * ```chown -R www-data:www-data screenshots``` to make writtable by app this folder
+optional
+* ```chmod 755 procedure_capture.partial``` in custom_scripts folder for app reads this file
 * ```chown www-data:www-data phantomjs``` to make executable by app phantomjs bin in bin folder
 
 ## Utilization
